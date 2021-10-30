@@ -12,3 +12,21 @@ Training program in VB.NET
 - CTS.
 - MSIL.
 - AssemblyStructure of an AssemblyCross – Language SupportPrivate and Shared Assembly Managed Environment.
+## Day 2
+- Classes as Structured Data
+- Objects
+- Methods
+- Constructors and Initialization
+- Overloaded Constructor
+- Destructor
+- Static Fields and Methods
+- Constant and Readonly
+- Value Types
+- Boxing and Unboxing
+- Reference Types 
+- Methods, Properties and Operators
+- Methods
+- Parameter Passing
+- Method Overloading
+- Variable-Length Parameter Lists
+- Properties
