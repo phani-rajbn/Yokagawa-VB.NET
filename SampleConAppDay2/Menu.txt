@@ -1,0 +1,7 @@
+﻿~~~~~~~~~~~~~~~~CUSTOMER MANAGEMENT SOFTWARE~~~~~~~~~~~~~~~~~
+TO ADD NEW CUSTOMER----------->PRESS N
+TO DELETE A CUSTOMER---------->PRESS D
+TO UPDATE A CUSTOMER---------->PRESS U
+TO FIND A CUSTOMER---------->PRESS F
+PS: ANY OTHER ENTRY IS CONSIDERED AS EXIT
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

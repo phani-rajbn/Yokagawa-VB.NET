@@ -1,0 +1,37 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+SampleConAppDay2
+</name>
+</assembly>
+<members>
+<member name="T:SampleConAppDay2.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:SampleConAppDay2.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:SampleConAppDay2.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="M:SampleConAppDay2.AbstractClassExample.Account.Credit(System.Double)">
+ <summary>
+ Adds the Amount to the current balance of the Account
+ </summary>
+ <param name="amount">The Amount in double to add</param>
+</member>
+<member name="T:SampleConAppDay2.RepositoryExample.Customer">
+ <summary>
+ Represents a customer of the Application
+ </summary>
+</member>
+</members>
+</doc>
