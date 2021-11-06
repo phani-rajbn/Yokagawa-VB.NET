@@ -30,3 +30,15 @@ Training program in VB.NET
 - Method Overloading
 - Variable-Length Parameter Lists
 - Properties
+- Method overriding vs. Method Shawdowing
+- Abstract Classes
+- Interfaces
+## Day 3
+- Collections in VB.NET
+- List(Of T)
+- HashSet(Of T)
+- Dictionary(Of K, V)
+- Queue(Of T)
+- Stack(Of T)
+- IEnumerable(Of T) vs. IEnumerator(Of T)
+- IComparable(Of T) vs. IComparator(Of T)
