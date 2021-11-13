@@ -42,3 +42,9 @@ Training program in VB.NET
 - Stack(Of T)
 - IEnumerable(Of T) vs. IEnumerator(Of T)
 - IComparable(Of T) vs. IComparator(Of T)
+## Day 4
+- Exception Handling
+- Custom Exceptions
+- Delegates and Events
+- Multi Threading Apps
+- Using Thread Synchronization
