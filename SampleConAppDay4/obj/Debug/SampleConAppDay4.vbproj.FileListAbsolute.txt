@@ -1,0 +1,11 @@
+D:\Trainings\Yokogawa\VBTraining\SampleConAppDay4\bin\Debug\SampleConAppDay4.exe.config
+D:\Trainings\Yokogawa\VBTraining\SampleConAppDay4\bin\Debug\SampleConAppDay4.exe
+D:\Trainings\Yokogawa\VBTraining\SampleConAppDay4\bin\Debug\SampleConAppDay4.pdb
+D:\Trainings\Yokogawa\VBTraining\SampleConAppDay4\bin\Debug\SampleConAppDay4.xml
+D:\Trainings\Yokogawa\VBTraining\SampleConAppDay4\obj\Debug\SampleConAppDay4.vbproj.AssemblyReference.cache
+D:\Trainings\Yokogawa\VBTraining\SampleConAppDay4\obj\Debug\SampleConAppDay4.Resources.resources
+D:\Trainings\Yokogawa\VBTraining\SampleConAppDay4\obj\Debug\SampleConAppDay4.vbproj.GenerateResource.cache
+D:\Trainings\Yokogawa\VBTraining\SampleConAppDay4\obj\Debug\SampleConAppDay4.vbproj.CoreCompileInputs.cache
+D:\Trainings\Yokogawa\VBTraining\SampleConAppDay4\obj\Debug\SampleConAppDay4.exe
+D:\Trainings\Yokogawa\VBTraining\SampleConAppDay4\obj\Debug\SampleConAppDay4.xml
+D:\Trainings\Yokogawa\VBTraining\SampleConAppDay4\obj\Debug\SampleConAppDay4.pdb

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+SampleConAppDay4
+</name>
+</assembly>
+<members>
+<member name="T:SampleConAppDay4.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:SampleConAppDay4.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:SampleConAppDay4.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="M:SampleConAppDay4.BookStore.UpdateBook(SampleConAppDay4.Book)">
+ <summary>
+ Updates the passed Book into the store
+ </summary>
+ <param name="bk">Book details to update</param>
+ <exception cref="T:SampleConAppDay4.BookNotFoundException"/>
+</member>
+<member name="M:SampleConAppDay4.ExceptionHandling.ThrowExample">
+ <summary>
+ Example to raise an Exception thru code in VB.NET
+ </summary>
+ <exception cref="T:System.Exception">Throws when the user role is not appropriate</exception>
+</member>
+</members>
+</doc>
