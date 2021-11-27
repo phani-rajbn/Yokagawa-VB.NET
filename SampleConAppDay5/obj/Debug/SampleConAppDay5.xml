@@ -22,9 +22,39 @@ SampleConAppDay5
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="T:SampleConAppDay5.DataComponent">
+ <summary>
+ Implements the IDataComponent to store the data into FileSystem as CSV file
+ </summary>
+</member>
 <member name="M:SampleConAppDay5.FileIO.simpleFileReading">
  <summary>
  Function Example to read the contents of the Text file as it is.
+ </summary>
+</member>
+<member name="T:SampleConAppDay5.Employee">
+ <summary>
+ Represents an Employee of the System
+ </summary>
+</member>
+<member name="P:SampleConAppDay5.Employee.EmpID">
+ <summary>
+ Gets or Sets the ID of the Employee
+ </summary>
+</member>
+<member name="P:SampleConAppDay5.Employee.EmpName">
+ <summary>
+ Gets or Sets the Name of the Employee
+ </summary>
+</member>
+<member name="P:SampleConAppDay5.Employee.EmpAddress">
+ <summary>
+ Gets or Sets the Address or location of the Employee
+ </summary>
+</member>
+<member name="P:SampleConAppDay5.Employee.EmpSalary">
+ <summary>
+ Gets or Sets the Salary for the Employee
  </summary>
 </member>
 </members>
