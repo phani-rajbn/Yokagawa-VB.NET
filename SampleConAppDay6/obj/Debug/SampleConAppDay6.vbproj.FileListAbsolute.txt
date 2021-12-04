@@ -1,0 +1,12 @@
+D:\Trainings\Yokogawa\VBTraining\SampleConAppDay6\obj\Debug\SampleConAppDay6.vbproj.AssemblyReference.cache
+D:\Trainings\Yokogawa\VBTraining\SampleConAppDay6\obj\Debug\SampleConAppDay6.Resources.resources
+D:\Trainings\Yokogawa\VBTraining\SampleConAppDay6\obj\Debug\SampleConAppDay6.vbproj.GenerateResource.cache
+D:\Trainings\Yokogawa\VBTraining\SampleConAppDay6\obj\Debug\SampleConAppDay6.vbproj.CoreCompileInputs.cache
+D:\Trainings\Yokogawa\VBTraining\SampleConAppDay6\bin\Debug\SampleConAppDay6.exe.config
+D:\Trainings\Yokogawa\VBTraining\SampleConAppDay6\bin\Debug\SampleConAppDay6.exe
+D:\Trainings\Yokogawa\VBTraining\SampleConAppDay6\bin\Debug\SampleConAppDay6.pdb
+D:\Trainings\Yokogawa\VBTraining\SampleConAppDay6\bin\Debug\SampleConAppDay6.xml
+D:\Trainings\Yokogawa\VBTraining\SampleConAppDay6\obj\Debug\SampleConAppDay6.exe
+D:\Trainings\Yokogawa\VBTraining\SampleConAppDay6\obj\Debug\SampleConAppDay6.xml
+D:\Trainings\Yokogawa\VBTraining\SampleConAppDay6\obj\Debug\SampleConAppDay6.pdb
+D:\Trainings\Yokogawa\VBTraining\SampleConAppDay6\obj\Debug\SampleConAppDay6.UIForm.resources
