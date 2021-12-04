@@ -48,3 +48,7 @@ Training program in VB.NET
 - Delegates and Events
 - Multi Threading Apps
 - Using Thread Synchronization
+## Day 6
+- ADO.NET
+- Connected Model
+- Layered Architecture with Connected Model
