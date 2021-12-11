@@ -48,6 +48,13 @@ Training program in VB.NET
 - Delegates and Events
 - Multi Threading Apps
 - Using Thread Synchronization
+## Day 5
+- File IO.
+- File Class
+- StreamReader Class
+- FileStream Class
+- Binary Serialization
+- XML Serialization
 ## Day 6
 - ADO.NET
 - Connected Model
