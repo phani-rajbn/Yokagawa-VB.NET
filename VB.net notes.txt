@@ -1,0 +1,80 @@
+Principles of OOP: SOLID Priciple.
+Single Responsibility Principle: A Class must be designed to do only one job or one set of Jobs which are closely related. Dont mix all into one.
+Open-Closed Principle: A Class is closed for Modification, but it is open for extension. A class created is always immutable. Extend the class and add the new functions/modify the existing functions to it. This is the principle behind the feature of Inheritance in OOP. 
+Liskov's Substitution Principle: A Base class can be substituted by any of its child classes as long as it does not alter the signature of the functions U call. Method overriding feature is based on this. UR Parent class is instantiated to the derived class and call its methods as long as the methods follow the same signature. Every Subclass should/can be substitutable for their Super Class. 
+Interface Segregation Principle: A client should not be forced to implement an interface which he/ she does not use it. Dont write fat interfaces, U can create small interfaces based on the requirements of UR class. No unnessasary implementation is required.  
+Dependency Inversion principle: UR code(Entities) should depend on abstraction not on Concretions. When U create a function, the function should give an abstract object instead of specific object or take an abstract object as arg instead of a specific concrete class object. This will allow abstraction in ur code leading to the concept of DECOUPLING.   
+
+1. Program UR Code for the interfaces. 
+2. Functions should follow DI Principle for decoupling. 
+3. Divide UR code into Units and write the Unit tests for these Functions. SR Principle. 
+
+Features of OOP: Inheritance, Polymorphism, Encapsulation, Abstraction. 
+---------------------------------------------------------------------------------------------------------------
+Collections is a Feature of large Programming languages where there are ready to use apis to store the data in memory. It will allow to create objects and store data in them, mostly of the same data type and can be used in ur code. 
+There are various data structures available that can be used based on ur requirement. 
+Almost all the Collection components have certain common features:
+1. They are dynamic, U can add, remove the items whenever U want to. 
+2. They are mostly iteratable, U can apply foreach statement on the object of the collection and iterate(move forward one at a time) to access every element within the collection object. 
+3. Most of the collection classes implement 1 or 2 common interfaces like IEnumerable(Iterable), IComparable(Comparator) , ICollection and IList. 
+In .NET there are 2 versions of Collections: Generic Collections introduced in .NET 2.0v and Non-generic Collections that was available since the inception of .NET Framework. It is recommended to use Generic version of the collections for typesafety. 
+Our program concentrates on Generic version as it has many advantages:
+1. Data is stored in specific types unlike objects that was in previous version. 
+2. The generic collections are faster in execution, as there is no need to implicitly store as object and reconvert back from the object to the type while we read the data(This is called as BOXING and UNBOXING). 
+3. It is more readable and maintainable. 
+
+System.Collections.Generic is the namespace required to be imported while working with Generic Collections.
+List<T>: Similar to Arrays but dynamic. 
+HashSet<T>: Unique List Items.This is similar to Set.
+Dictionary<K,V>: Stores the data in the form of key-value pairs. Similar to HashMap
+Queue<T>: Stores the data in the form of First-In First-Out basis.
+Stack<T>: Stores the data as First-In Last Out.
+LinkedList<T> stores the data like a chain. 
+Over and above, U can create UR own Custom Collection Classes by implementing certain interfaces by URself. 
+
+A Class that implements IEnumerable becomes a collection class. This interface has one Function called GetEnumerator which returns an IEnumerator interface object. This interface is same as Iterator. It will provide properties and methods to move next while we access the current object within the collection. 
+IEnumerable(Of T) will provide the ability to perform Iteration and IEnumerator(Of T) will be the object that does the iteration. 
+
+For comparing purposes:
+IComparable(Of T) is used to allow sorting for the objects of the class. This will do the default sorting. 
+IComparer(Of T) is used to allow sorting on different criteria and will be implemented by another class whose job is to compare the objects of a certain type.  
+
+-----------------------Serialization------------------------------------------
+Serialization is an ability of saving the object into a file instead of its data. An object contains info about it as well its metadata like assembly, version and many more. This will help in performing inter process communication. 
+.NET supports 3 forms of serialization: XML, Binary and SOAP. Soap is used for XML based Web services. 
+XML is used for data sharing across machines. Binary serialization is  used within a single OS. 
+Serialization has 3 points:
+Where: File or Memory using Stream objects.
+What: Objects with attribute Serializable 
+How: Format of serialization: Binary, XML or SOAP.
+-------------------------------------------ADO.NET---------------------------------------------------------------------
+Software requirements:
+Visual Studio 2019 or later. 
+SQL Server 2015 or any Relational database like Oracle, MySql..... 
+SSMS: SQL Server Managerment Studio- IDE for SQL Server.(Optional) 
+My server name is : .\SQLEXPRESS
+U can also integrate UR SQL Server with the Visual Studio.
+
+UR App should connect to another software called database and perform all the operations required for UR applications. Most of the databases use a sp language for communication: Structured query language(SQL). Most of the database programmers will learn this language and perform the operations. 
+Our VB.NET should communicate with this SQL based language and the software. 
+Every Database software installed will have some high level programs called Drivers or Providers. These providers are the channel of communication b/w the Application and the database. 
+MS has provided Interfaces that vendors can implement in their programs and give the code in the form of dlls. Dlls are similar to JAR files of Java. 
+---------------------------------------------------ADO.NET Connected Model-------------------------------------------------------
+.NET has 3 Frameworks for interacting with databases:
+ADO.NET: Classic way of connecting to the database and performing operations.
+In ADO.NET U can perform db operations using Connected Model and Disconnected Model. 
+Entity Framework: ORM Framework for database interactions(Hibernate)
+LINQ to SQL Classes: ORM Framework specifically for SQL Server which was the part of the LINQ team of MS. 
+
+Connected Model of Data Access in ADO.NET: ActiveX Data Objects .NET. It comes from the older version of Visual Studio 6.0. ADO.NET gets only the name from the older version, but all the things in it are different.
+Data Access Models are units developed to abstract the internals of DB Connections and its interactions. The APIs provided by the Data Access Models will internally do the IPC, Data Transfer and many more complex actions that will be abstracted to the Developer. 
+JDBC is for Java Developers and ADO.NET is for .NET Developers. 
+
+Import the namespace called System.Data.SqlClient for SQL server database interactions. 
+Import the namespace System.Data for performing data related operations irrespective of the database.
+SqlConnection is the class that contains the APIs for database Connection. It has methods like Open and Close to Open the DB Connection and close the DB connection. It has property called ConnectString that contains the info about the database connection. ProviderName, User credentials, Servername and DB Name will be mentioned in this Connection string in a certain format.
+SqlCommand is the class that contain the APIs for execution the SQL Commands to the database. SQLCommand object should be associated with the Connection object to execute the Statements. There are 3 ways to execute a Statement. 
+a. When we have select commands, we use ExecuteReader which returns a Reader object thru' which U read the data. 
+b. When we have insert, delete and update, we use ExecuteNonQuery where we dont have any data to read. 
+c. When we have single value to fetch, we use ExecuteScalar where we get only one value:MAX,MIN, FIRSt and many more. 
+SqlDataReader is required only when U want to read the data fetched from a proper SQL select statement. In this case, the data will be read by the Reader in a forward only and read only manner. 
