@@ -59,3 +59,7 @@ Training program in VB.NET
 - ADO.NET
 - Connected Model
 - Layered Architecture with Connected Model
+## Day 7
+- Win Forms
+- Common Controls of Win Forms.
+## Day 8
