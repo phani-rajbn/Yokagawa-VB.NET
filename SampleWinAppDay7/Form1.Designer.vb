@@ -39,9 +39,9 @@ Partial Class frmUserInfo
         '
         Me.lblTitle.AutoSize = True
         Me.lblTitle.Font = New System.Drawing.Font("Microsoft Tai Le", 27.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTitle.Location = New System.Drawing.Point(259, 26)
+        Me.lblTitle.Location = New System.Drawing.Point(226, 16)
         Me.lblTitle.Name = "lblTitle"
-        Me.lblTitle.Size = New System.Drawing.Size(422, 48)
+        Me.lblTitle.Size = New System.Drawing.Size(534, 60)
         Me.lblTitle.TabIndex = 0
         Me.lblTitle.Text = "User Registration Form"
         '
@@ -50,7 +50,7 @@ Partial Class frmUserInfo
         Me.Label1.AutoSize = True
         Me.Label1.Location = New System.Drawing.Point(210, 85)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(111, 26)
+        Me.Label1.Size = New System.Drawing.Size(141, 34)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Full Name:"
         '
@@ -59,7 +59,7 @@ Partial Class frmUserInfo
         Me.Label2.AutoSize = True
         Me.Label2.Location = New System.Drawing.Point(168, 142)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(153, 26)
+        Me.Label2.Size = New System.Drawing.Size(194, 34)
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "Postal Address:"
         '
@@ -68,7 +68,7 @@ Partial Class frmUserInfo
         Me.Label3.AutoSize = True
         Me.Label3.Location = New System.Drawing.Point(186, 301)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(135, 26)
+        Me.Label3.Size = New System.Drawing.Size(170, 34)
         Me.Label3.TabIndex = 3
         Me.Label3.Text = "Date of Birth:"
         '
@@ -77,20 +77,20 @@ Partial Class frmUserInfo
         Me.Label4.AutoSize = True
         Me.Label4.Location = New System.Drawing.Point(186, 358)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(135, 26)
+        Me.Label4.Size = New System.Drawing.Size(172, 34)
         Me.Label4.TabIndex = 4
         Me.Label4.Text = "Qualification:"
         '
         'txtName
         '
-        Me.txtName.Location = New System.Drawing.Point(327, 82)
+        Me.txtName.Location = New System.Drawing.Point(352, 79)
         Me.txtName.Name = "txtName"
-        Me.txtName.Size = New System.Drawing.Size(408, 34)
+        Me.txtName.Size = New System.Drawing.Size(408, 41)
         Me.txtName.TabIndex = 5
         '
         'txtAddress
         '
-        Me.txtAddress.Location = New System.Drawing.Point(327, 142)
+        Me.txtAddress.Location = New System.Drawing.Point(352, 139)
         Me.txtAddress.Multiline = True
         Me.txtAddress.Name = "txtAddress"
         Me.txtAddress.Size = New System.Drawing.Size(408, 128)
@@ -98,9 +98,9 @@ Partial Class frmUserInfo
         '
         'txtBirthDate
         '
-        Me.txtBirthDate.Location = New System.Drawing.Point(327, 293)
+        Me.txtBirthDate.Location = New System.Drawing.Point(352, 290)
         Me.txtBirthDate.Name = "txtBirthDate"
-        Me.txtBirthDate.Size = New System.Drawing.Size(408, 34)
+        Me.txtBirthDate.Size = New System.Drawing.Size(408, 41)
         Me.txtBirthDate.TabIndex = 7
         '
         'cmbQualification
@@ -108,9 +108,9 @@ Partial Class frmUserInfo
         Me.cmbQualification.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbQualification.FormattingEnabled = True
         Me.cmbQualification.Items.AddRange(New Object() {"Graduation", "Post Graduation", "Under Graduation", "P.hd."})
-        Me.cmbQualification.Location = New System.Drawing.Point(328, 355)
+        Me.cmbQualification.Location = New System.Drawing.Point(353, 352)
         Me.cmbQualification.Name = "cmbQualification"
-        Me.cmbQualification.Size = New System.Drawing.Size(407, 34)
+        Me.cmbQualification.Size = New System.Drawing.Size(407, 40)
         Me.cmbQualification.TabIndex = 8
         '
         'btnSave
@@ -135,7 +135,7 @@ Partial Class frmUserInfo
         'frmUserInfo
         '
         Me.AcceptButton = Me.btnSave
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 26.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(14.0!, 32.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.CancelButton = Me.btnCancel
@@ -154,7 +154,7 @@ Partial Class frmUserInfo
         Me.Font = New System.Drawing.Font("Microsoft Tai Le", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ForeColor = System.Drawing.Color.Maroon
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "frmUserInfo"

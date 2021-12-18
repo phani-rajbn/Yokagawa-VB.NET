@@ -2,7 +2,7 @@
     Private Sub btnCancel_Click(sender As Object, e As EventArgs) Handles btnCancel.Click
         Me.Close() 'The Form should close
     End Sub
-
+    'Every control will ahve a default event. Click is the default event of Button
     Private Sub btnSave_Click(sender As Object, e As EventArgs) Handles btnSave.Click
         Dim strContent As String
         Dim dob As DateTime = DateTime.Parse(txtBirthDate.Text)
