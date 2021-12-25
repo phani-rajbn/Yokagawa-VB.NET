@@ -63,3 +63,7 @@ Training program in VB.NET
 - Win Forms
 - Common Controls of Win Forms.
 ## Day 8
+- Disconnected Architecture
+- DataGridView
+- DataView
+- Brief on Reflection to implement DataFactory
