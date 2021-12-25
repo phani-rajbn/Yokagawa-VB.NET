@@ -4,31 +4,35 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{85A2A79F-E9A3-4573-A0E0-1C71C905C3F0}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <RootNamespace>SampleDataLib</RootNamespace>
-    <AssemblyName>SampleDataLib</AssemblyName>
+    <ProjectGuid>{93D743D4-B651-4242-BE27-E0E6ADF666CE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>SampleWinAppDay7.My.MyApplication</StartupObject>
+    <RootNamespace>SampleWinAppDay7</RootNamespace>
+    <AssemblyName>SampleWinAppDay7</AssemblyName>
     <FileAlignment>512</FileAlignment>
-    <MyType>Windows</MyType>
+    <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>SampleDataLib.xml</DocumentationFile>
+    <DocumentationFile>SampleWinAppDay7.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <DefineDebug>false</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>SampleDataLib.xml</DocumentationFile>
+    <DocumentationFile>SampleWinAppDay7.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -47,6 +51,9 @@
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -59,18 +66,57 @@
     <Import Include="System.Collections" />
     <Import Include="System.Collections.Generic" />
     <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
     <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
     <Import Include="System.Linq" />
     <Import Include="System.Xml.Linq" />
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataComponent.vb" />
-    <Compile Include="DisconnectedDBComponent.vb" />
+    <Compile Include="Components\Employee.Designer.vb">
+      <DependentUpon>Employee.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Components\Employee.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DeleteForm.Designer.vb">
+      <DependentUpon>DeleteForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DisconnectedForm.Designer.vb">
+      <DependentUpon>DisconnectedForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DisconnectedForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DisconnectedInsert.Designer.vb">
+      <DependentUpon>DisconnectedInsert.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DisconnectedInsert.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterDetail.Designer.vb">
+      <DependentUpon>MasterDetail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MasterDetail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\DisconnectedModel.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -82,13 +128,49 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="NewEmployee.Designer.vb">
+      <DependentUpon>NewEmployee.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NewEmployee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TreeViewExample.Designer.vb">
+      <DependentUpon>TreeViewExample.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TreeViewExample.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Components\Employee.resx">
+      <DependentUpon>Employee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteForm.resx">
+      <DependentUpon>DeleteForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisconnectedForm.resx">
+      <DependentUpon>DisconnectedForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisconnectedInsert.resx">
+      <DependentUpon>DisconnectedInsert.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterDetail.resx">
+      <DependentUpon>MasterDetail.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewEmployee.resx">
+      <DependentUpon>NewEmployee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TreeViewExample.resx">
+      <DependentUpon>TreeViewExample.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -101,6 +183,16 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SampleDataLib\SampleDataLib.vbproj">
+      <Project>{85a2a79f-e9a3-4573-a0e0-1c71c905c3f0}</Project>
+      <Name>SampleDataLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Utils\Branches.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
