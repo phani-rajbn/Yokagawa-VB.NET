@@ -1,6 +1,8 @@
 ﻿Imports System.Configuration
 Imports System.Data
 Imports System.Data.SqlClient
+Imports System.Reflection
+Imports System.Diagnostics
 'Code Complete
 Public Interface IDBComponent
     Sub AddEmployee(id As Integer, name As String, address As String, salary As Double)
@@ -72,7 +74,16 @@ End Class
 
 Public Class DataFactory
     Public Shared Function GetComponent() As IDBComponent
-        Return New DataComponent()
+        Dim asm = Assembly.Load("SampleDataLib") 'Load the dll into the process
+        Dim strClassName = ConfigurationManager.AppSettings("DataComponent") 'Get the class name to instantiate
+        Dim component = asm.GetType(strClassName) 'Get the type info of the class
+        If component Is Nothing Then
+            Debug.WriteLine("Component is not available")
+            Throw New Exception("Componet loading failed")
+        End If
+        Dim instance As IDBComponent 'Create an object of the interface
+        instance = Activator.CreateInstance(component) 'Instantiate the object thru Reflection
+        Return instance
     End Function
 End Class
 Public Class EmployeeException
@@ -89,3 +100,4 @@ Public Class EmployeeException
     End Sub
 
 End Class
+
