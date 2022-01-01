@@ -1,0 +1,26 @@
+HKCR
+{
+	SampleCOMLib.MathComponent.1 = s 'MathComponent class'
+	{
+		CLSID = s '{2f6c1b60-9325-44d3-9e7a-6e2102ce5b59}'
+	}
+	SampleCOMLib.MathComponent = s 'MathComponent class'
+	{		
+		CurVer = s 'SampleCOMLib.MathComponent.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {2f6c1b60-9325-44d3-9e7a-6e2102ce5b59} = s 'MathComponent class'
+		{
+			ProgID = s 'SampleCOMLib.MathComponent.1'
+			VersionIndependentProgID = s 'SampleCOMLib.MathComponent'
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			TypeLib = s '{56721aae-2eb4-4c77-b67f-5541faf544c5}'
+			Version = s '1.0'
+		}
+	}
+}

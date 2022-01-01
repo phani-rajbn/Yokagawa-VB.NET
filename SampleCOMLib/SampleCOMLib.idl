@@ -1,0 +1,41 @@
+// SampleCOMLib.idl : IDL source for SampleCOMLib
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (SampleCOMLib.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(438608b0-a842-4b3c-8e84-291eff71a3af),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+]
+interface IMathComponent : IDispatch
+{
+	[id(1)]
+	HRESULT AddMethod(int iVal1, int iVal2, int* iRes);
+	[id(2)]
+	HRESULT SubtractMethod(int iVal1, int iVal2, int* iRes);
+};
+[
+	uuid(56721aae-2eb4-4c77-b67f-5541faf544c5),
+	version(1.0),
+]
+library SampleCOMLibLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(2f6c1b60-9325-44d3-9e7a-6e2102ce5b59)
+	]
+	coclass MathComponent
+	{
+		[default] interface IMathComponent;
+	};
+};
+
+import "shobjidl.idl";
+//2 or more methods are grouped into an interface which will be implemented by a COM Component and exposed thru a DLL or a library
