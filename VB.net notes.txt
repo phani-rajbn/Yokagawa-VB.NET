@@ -78,3 +78,56 @@ a. When we have select commands, we use ExecuteReader which returns a Reader obj
 b. When we have insert, delete and update, we use ExecuteNonQuery where we dont have any data to read. 
 c. When we have single value to fetch, we use ExecuteScalar where we get only one value:MAX,MIN, FIRSt and many more. 
 SqlDataReader is required only when U want to read the data fetched from a proper SQL select statement. In this case, the data will be read by the Reader in a forward only and read only manner. 
+------------------------------Win Forms----------------------------------------------------------
+Develop a complete E2E Application on a Out-Patient Management software with data stored in SQL server and using both connected and disconneced model. 
+It should have the following features:
+1. Register an outpatient
+2. Collect fee for the outpatient associated with a doctor. 
+3. Doclist comes from an XML File.
+4. User should be able to find patient on given date, on name or on doctor name.
+5. Once a patient is registered, and he/she revisits U should not register the patient again but the database should contain the visit details of the patient including the patient's billing. 
+It should have entity classes, Exception Classes, LogClass, 
+U should handle all Exceptions and should the log the functionalties of the program in an EventLog. 
+Use Connected model for insertion, deletion and updation
+Use disconnected model for gettings the records. 
+-----------------------------------------------------------------------------------------------------------
+COM stands for Component Object Model(COM).
+COM is a language independent technology used for creating Components that can work on multiple languages on Windows Platform. It was language independent and location transperant. 
+Components were distributed as DLLs or EXEs. Components of DLLs are called Inproc components and exes were called outproc components: OutProc-local Components and OutProc-Remote Components. 
+Old VB6 exposed Dlls in the form of COM only. They were marketted using a term called ACTIVE-X.We had ActiveX dlls, Active Components, ActiveX Controls and many more. 
+DirectX which is popular for gaming was based on COM. 
+Now COM is replaced by .NET. Microsoft no longer recommends to create COM Components. However there are large organizations which use COM and create Wrapper classes in .NET to internally consume COM and use it in their future apps. 
+IDispatch interface was used to load the COM Components using DISPIDs and used thru' late binding. 
+It uses the Concept of V-Table binding to invoke a method thru' its address instead of a name. It is similar to pure virtual Functions of C++. Any programming language which understands this concept of pure virtual functions(FUNCTION POINTERS) can be used to create/ consume COM Components. 
+Any COM Component must be registered into the OS before use. Making it Location transperant. Windows Registry is a local repository of all its software, dlls which maintains a UNIQUE no called GUID(UUID) that is registered in UR OS. By the ID U can invoke the COM object without knowing the physical location of the COM object. 
+Library is DLL which contains one or more COM Components in it. Each component can be a class which exposes the methods thru interfaces.
+INSIDE COM- Dale Rogerson(MS Press) and BEGINING ATL3 COM Programming(Wrox)
+
+Windows service:
+A service in Windows Platform is an application or an EXE which starts automatically on the bootup of the Machine. Windows OS itself is one such service. These Applications run behind the scene and they start automatically when your OS starts. Ofcourse U can control the way they start using SCM(Service Control Manager). Services are registered in the OS and is available to U thru' a command services from the start menu. Most of the time, the services run behind the scene and will not have any User interfaces. 
+Services are simply apps that will log some information that can be processed in the later part of the programs. Other Normal Applications will consume the service thru' IPC mechanisms(.NET Remoting). 
+Examples of services: SQL server service, DateTime Service, Themes Service and many more which OS itself consumes for running the OS. 
+U can schedule the  service running using Windows Scheduler. The Machine should be logged when U want to consume or run a service. 
+Services concept was introduced only after Enterprise OS of Windows came into existance. Win NT 4.0 WorkStation and Windows NT Server, Windows 2000 were the first to start the services.
+Windows services are registered into the OS and will behave based on the settings done thru' SCM. Services can be executed on various accounts like Local Service, Network service and many more.
+
+The core function of any Windows service is to run an App in the background. Unlike WIndows Apps, Services can start before any user loggs to the machine(Bootup). 
+Windows services run on its own process. U must do IPC to interact with the service. Most of the services are things that log the info when a certain action happens in ur machine. 
+
+To create a Service in VB.NET, we should select Windows Service Project. 
+
+Limitations:
+U need admin rights to do any installations and uninstallations. 
+Windows services run only on Windows OS. 
+There is limited scope of applications consuming the data provided by the services. 
+WinService -> Database -> Put it into a file. 
+Applications ->Files -> Read the data.
+
+WCF introduced in 2008 and 2010 provided services that can be consumed by any platform and device. 
+WCF uses attributes(Annotations) to create services and methods that can be consumed by a .NET Application irrespective of the language and platform. 
+Data willbe in database -> Data Transfer happens thru' HTTP(GET/PUT/POST/DELETE) Format: JSON or XML. 
+Data is exposed using Programming languages like Java and C# and exposed thro Libraries like Springboot or Web API. UI Apps like Angular, React, Vue and other JS Frameworks are used to create UIs with plain HTML and JS(Not have any IO operations). 
+Apps will only be UI of the Application. 
+Persistance will be in the backend server(IIS, Apache or Nodejs)
+WCF(Windows Communication Foundation) is still used in Product based Firms where the data will be more on Windows
+platform but should be exposed to a non Windows Environment. 
