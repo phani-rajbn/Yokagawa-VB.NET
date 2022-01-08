@@ -62,8 +62,19 @@ Training program in VB.NET
 ## Day 7
 - Win Forms
 - Common Controls of Win Forms.
-## Day 8
+## Day 8 and 9
 - Disconnected Architecture
 - DataGridView
 - DataView
 - Brief on Reflection to implement DataFactory
+## Day 10
+- Reflection
+- GarbageCollection
+- Master-Detail Example
+## Day 11
+- Creating and Consuming COM Components
+- Interoperability.
+- End to End Application.
+# Day 12
+- Windows services
+- WCF services
