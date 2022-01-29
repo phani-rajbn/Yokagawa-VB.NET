@@ -83,7 +83,7 @@ Public Class DataComponent
                     emp.EmpId = Convert.ToInt32(reader(0))
                     emp.EmpSalary = Convert.ToInt32(reader(3))
                     emp.EmpName = reader(1).ToString
-                    emp.EmpName = reader(1).ToString
+                    emp.EmpAddress = reader(2).ToString
                     Return emp
                 End While
             Else
@@ -110,8 +110,8 @@ Public Class DataComponent
                     emp.EmpId = Convert.ToInt32(reader(0))
                     emp.EmpSalary = Convert.ToInt32(reader(3))
                     emp.EmpName = reader(1).ToString
-                    emp.EmpName = reader(1).ToString
-                    list.Add(emp)
+                emp.EmpAddress = reader(2).ToString
+                list.Add(emp)
             End While
             Return list 'Return the final list of employees
         Catch ex As SqlException
